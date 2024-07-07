@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playwrite US Trad", cursive;
+}
+
+ul > li{
+    list-style: none;
+}
+
+/* HOME */
+
+#home{
+    background-image: url(img/front.jpeg);
+    height:100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -2;
+}
+
+#home-content{
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 15%;
+    color: aliceblue;
+}
+
+#home-content a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 6px;
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+/* ABOUT */
+
+#about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about > h1{
+    text-align: center;
+    font-size: 19px;
+}
+.icon{
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.icon1{
+    background-image: url(img/phil.gif);
+}
+.icon2{
+    background-image: url(img/exp.gif);
+}
+.icon3{
+    background-image: url(img/desti.gif);
+}
+.about-flex-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.boxes{ 
+    /* border: 1px solid #333; */
+    border-radius: 2px;
+    width: 30%;
+    text-align: center;
+    height: auto;
+    align-items: center;
+}
+.boxes > p{
+    font-size: 13px;
+}
+
+.boxes > h3{
+    font-size: 16px;
+}
+
+/* EXPLORE */
+
+#explore{
+    height: 80vh;
+    margin-bottom: 50px;
+}
+
+#explore > h1{
+    text-align: center;
+    font-size: 19px;
+}
+
+.container{
+    width: 85vmin;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 15px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(20, 20, 20, 0.3);
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+
+
+/* TARRIF */
+
+#tarrif > h1{
+    text-align: center;
+}
+
+.about-flex-container > ul {
+    height: auto;
+    width: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
